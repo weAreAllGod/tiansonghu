@@ -16,13 +16,17 @@ public class ifelse03 {
                 System.out.println("票价30");
             } else if (age > 60) {
                 System.out.println("票价20");
+            } else
+			System.out.println("年龄输入错误" );
             }
         } else  {
             if (age >=18 && age <=60){
                 System.out.println("票价40");
-            } else {
+            } else if ((100 > age && age > 60) || (18 > age && age > 0)) {
                 System.out.println("票价20");
-            }
+            }else {
+			System.out.println("年龄输入错误" );
+		    }
         }
     }
 }
