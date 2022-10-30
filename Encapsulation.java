@@ -12,6 +12,9 @@ public class Encapsulation {
         person.setJob("技术员");
         System.out.println(person.info());
         System.out.println(person.getSalary());
+        Person person1 = new Person("aasfgsrhafa",699,600000);
+        System.out.println("=======构造器创建的信息=======");
+        System.out.println(person1.info());
     }
 }
 class Person {
@@ -19,6 +22,12 @@ class Person {
     private int age;
     private double salary;
     private String job;
+    
+    public Person(String name, int age, double salary) {
+    setName(name);
+    setAge(age);
+    setSalary(salary);
+    }
 
     public String getName() {
         return name;
